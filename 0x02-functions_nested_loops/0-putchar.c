@@ -1,6 +1,8 @@
-#include <stdio.h>
+#include <main.h>
 /**
- * Comment
+ * man - print _putchar
+ * is written by
+ * Return 0
  */
 int main(void) ,
 {
