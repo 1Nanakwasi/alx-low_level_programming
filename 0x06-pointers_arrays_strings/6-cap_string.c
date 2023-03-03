@@ -4,7 +4,7 @@
  * cap_string - a function that capitalizes all words of a string
  * @str: to be capitalizes
  *
- * Return: A pointer to the changes string
+ * Return: str
  */
 
 char *cap_string(char *str)
