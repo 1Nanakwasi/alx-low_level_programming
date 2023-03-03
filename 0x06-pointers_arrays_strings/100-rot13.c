@@ -5,30 +5,31 @@
  * rot13 - a function that encodes a string using rot13
  * @s: pointer to string params
  *
- * Returns: *s
+ * Returns: str
  */
 
-char *rot13(char *s)
+char *rot13(char *str)
 {
-	int a;
-	int b;
-	char data1 [] =
-"ABCDEFGHIJKLMNOPQRSTUVWXYZabcde
-fghijklmnopqrstuvwxyz";
-	char datarot[] =
-"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyz";
+	int indx1 = 0, index2;
+	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F', 
+'G','H', 'I', 'J', 'K', 'L', 'M', 'N','O','P', 
+'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y'. 'Z'};
+	char alphabet[52] = {'a', 'b', 'c', 'd', 'e', 'f',
+'g','h', 'i', 'j', 'k', lL', 'm', 'n','o','p', 
+'q', 'r', 's', 't', 'u', 'v', 'x', 'y'. 'z'};
 
-	for (a = 0; S[a] != '\0'; a++)
+	while (str[indx1])
 	{
-		for (b = 0; b < 52; b++)
+		for (index2 = 0; indx2 < 52; indx2++)
 		{
-			if (s[a] == data1 [b])
+			if (str[index1] == alphabet[indx2])
 			{
-					s[a] = datarot[b];
-					break;
-				}
+				(str[index1] == rot13key[indx2]);
+				break;
 			}
 		}
-		return (s);
+		indx1++;
 	}
+
+	return (str);
 }
