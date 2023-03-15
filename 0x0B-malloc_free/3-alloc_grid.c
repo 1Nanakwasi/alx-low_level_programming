@@ -1,15 +1,11 @@
-#include "main.h"	
+#include "main.h"
 #include <stdlib.h>
-
-/**	
- * alloc_grid - a function that returns a pointer to
- * a 2 dimensional array of integer
+/**
+ * alloc_grid - loop to make grid
  * @width: width input
  * @height: height input
- *
  * Return: pointer to 2 dim. array
  */
-
 int **alloc_grid(int width, int height)		
 {
 	int **aac;
