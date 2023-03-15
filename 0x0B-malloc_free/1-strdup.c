@@ -4,8 +4,7 @@
 		
 /**
  * _strdup - a function that returns a pointer
- * @str:
- * @char:
+ * @str: char
  * Return: 0	
  */
 
